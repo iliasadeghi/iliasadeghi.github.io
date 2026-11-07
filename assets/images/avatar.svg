@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="520" viewBox="0 0 240 260" role="img" aria-label="Illustration of a smiling boy in a hoodie">
+  <!-- TODO: customise the colours with the skin, hair and shirt CSS variables, or replace with your own photo -->
+  <style>
+    .c-skin { fill: var(--skin, #f7d6bd); }
+    .c-skin-shade { fill: var(--skin-shade, #e8b999); }
+    .c-hair { fill: var(--hair, #1f1714); }
+    .c-hair-hi { fill: var(--hair-hi, #3a2a24); }
+    .c-shirt { fill: var(--shirt, #4f46e5); }
+    .c-shirt-dark { fill: var(--shirt-dark, #3730a3); }
+    .s-shirt-dark { stroke: var(--shirt-dark, #3730a3); }
+    .s-hair { stroke: var(--hair, #1f1714); }
+    .s-glasses { stroke: var(--glasses, #262626); }
+  </style>
+  <path class="c-shirt" d="M16 260 C16 206 56 190 120 190 C184 190 224 206 224 260 Z"/>
+  <path class="c-shirt-dark" d="M66 200 C70 176 90 166 120 166 C150 166 170 176 174 200 Z"/>
+  <rect class="c-skin-shade" x="102" y="146" width="36" height="62" rx="14"/>
+  <ellipse cx="120" cy="160" rx="30" ry="12" fill="#000" opacity=".12"/>
+  <path class="s-shirt-dark" d="M88 192 C100 218 140 218 152 192" fill="none" stroke-width="10" stroke-linecap="round"/>
+  <path d="M106 214 L104 242 M134 214 L136 242" stroke="#fff" stroke-opacity=".85" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="104" cy="245" r="3.5" fill="#fff" fill-opacity=".85"/>
+  <circle cx="136" cy="245" r="3.5" fill="#fff" fill-opacity=".85"/>
+  <circle class="c-skin" cx="70" cy="110" r="10"/>
+  <circle class="c-skin" cx="170" cy="110" r="10"/>
+  <circle class="c-skin-shade" cx="70" cy="111" r="4.5"/>
+  <circle class="c-skin-shade" cx="170" cy="111" r="4.5"/>
+  <ellipse class="c-skin" cx="120" cy="106" rx="50" ry="56"/>
+  <!-- hair: textured quiff, short tapered sides, jagged fringe -->
+  <path class="c-hair s-hair" stroke-width="3" stroke-linejoin="round" d="M68 92 C67 88 68 86 69 84 C71 76 74 70 78 64 C82 52 98 40 122 38 C146 36 164 50 163 64 C167 70 170 78 171 86 L171 92 L168 92 C167 88 165 84 162 80 L156 70 L150 74 L144 64 L136 72 L128 62 L120 70 L112 63 L104 72 L96 66 L88 74 L80 80 C75 84 72 88 72 92 Z"/>
+  <path class="c-hair-hi" d="M102 50 C110 42 126 40 144 43 C128 46 114 50 104 58 Z"/>
+  <path class="c-hair-hi" d="M122 50 C132 45 146 46 154 51 C142 53 132 56 127 61 Z"/>
+  <path class="s-hair" d="M90 90 Q101 84 112 89 M128 89 Q139 84 150 90" fill="none" stroke-width="4" stroke-linecap="round"/>
+  <g>
+    <circle cx="101" cy="108" r="5.5" fill="#1c1917"/>
+    <circle cx="139" cy="108" r="5.5" fill="#1c1917"/>
+    <circle cx="103" cy="106" r="1.8" fill="#fff"/>
+    <circle cx="141" cy="106" r="1.8" fill="#fff"/>
+  </g>
+  <path d="M120 112 Q115 124 122 126" fill="none" stroke="#000" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="88" cy="126" r="8" fill="#f43f5e" opacity=".18"/>
+  <circle cx="152" cy="126" r="8" fill="#f43f5e" opacity=".18"/>
+  <!-- smile -->
+  <path d="M105 132 Q120 152 135 132 Z" fill="#fff" stroke="#3b1d12" stroke-width="3" stroke-linejoin="round"/>
+  <!-- polygonal glasses -->
+  <g fill="none" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path class="s-glasses" fill="#fff" fill-opacity=".14" d="M85 102 L92 95 L111 95 L117 103 L113 117 L91 117 Z"/>
+    <path class="s-glasses" fill="#fff" fill-opacity=".14" d="M155 102 L148 95 L129 95 L123 103 L127 117 L149 117 Z"/>
+    <path class="s-glasses" d="M117 103 Q120 100 123 103 M85 102 L71 99 M155 102 L169 99"/>
+    <path d="M95 100 L102 100 M132 100 L139 100" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  </g>
+</svg>
