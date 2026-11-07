@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ilia Sadeghi | Computer Engineering Student &amp; Project Portfolio</title>
+  <meta name="description" content="Portfolio of Ilia Sadeghi, a first-year computer engineering student at York University who builds things and aims to become an AI engineer.">
+  <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0a09" media="(prefers-color-scheme: dark)">
+  <meta name="author" content="Ilia Sadeghi">
+
+  <link rel="canonical" href="https://iliasadeghi.github.io/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ilia Sadeghi | Project Portfolio">
+  <meta property="og:description" content="First-year computer engineering student who builds things. Explore my projects.">
+  <meta property="og:url" content="https://iliasadeghi.github.io/">
+  <meta property="og:image" content="https://iliasadeghi.github.io/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ilia Sadeghi, computer engineering student who builds things">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ilia Sadeghi | Project Portfolio">
+  <meta name="twitter:description" content="First-year computer engineering student who builds things. Explore my projects.">
+  <meta name="twitter:image" content="https://iliasadeghi.github.io/assets/images/og-image.png">
+
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M10 64C10 54 20 50 32 50C44 50 54 54 54 64Z' fill='%23818cf8'/%3E%3Cellipse cx='32' cy='34' rx='13' ry='15' fill='%23f7d6bd'/%3E%3Cpath d='M17 36C14 20 22 10 34 10C46 10 52 20 47 36C46 28 42 22 38 21C34 25 25 25 21 22C19 26 18 31 17 36Z' fill='%231f1714'/%3E%3Ccircle cx='27' cy='35' r='1.8' fill='%231c1917'/%3E%3Ccircle cx='37' cy='35' r='1.8' fill='%231c1917'/%3E%3Cpath d='M27 42Q32 46 37 42' stroke='%233b1d12' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts: two families, display=swap, system fallbacks defined in CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
+
+  <!-- Apply saved theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { /* storage unavailable: fall back to system preference */ }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!--
+    Character sprite: drawn once, reused with <use href="#boy-bust"> in the nav, hero, About and Contact.
+    Recolour it from the --skin / --hair / --shirt tokens in css/styles.css.
+    TODO: tweak the colours (or replace with your own photo) so it looks like you.
+  -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="boy-bust" viewBox="0 0 240 260">
+        <path class="c-shirt" d="M16 260 C16 206 56 190 120 190 C184 190 224 206 224 260 Z"/>
+        <path class="c-shirt-dark" d="M66 200 C70 176 90 166 120 166 C150 166 170 176 174 200 Z"/>
+        <rect class="c-skin-shade" x="102" y="146" width="36" height="62" rx="14"/>
+        <ellipse cx="120" cy="160" rx="30" ry="12" fill="#000" opacity=".12"/>
+        <path class="s-shirt-dark" d="M88 192 C100 218 140 218 152 192" fill="none" stroke-width="10" stroke-linecap="round"/>
+        <path d="M106 214 L104 242 M134 214 L136 242" stroke="#fff" stroke-opacity=".85" stroke-width="3" stroke-linecap="round" fill="none"/>
+        <circle cx="104" cy="245" r="3.5" fill="#fff" fill-opacity=".85"/>
+        <circle cx="136" cy="245" r="3.5" fill="#fff" fill-opacity=".85"/>
+        <circle class="c-skin" cx="70" cy="110" r="10"/>
+        <circle class="c-skin" cx="170" cy="110" r="10"/>
+        <circle class="c-skin-shade" cx="70" cy="111" r="4.5"/>
+        <circle class="c-skin-shade" cx="170" cy="111" r="4.5"/>
+        <ellipse class="c-skin" cx="120" cy="106" rx="50" ry="56"/>
+        <!-- hair: textured quiff, short tapered sides, jagged fringe -->
+        <path class="c-hair s-hair" stroke-width="3" stroke-linejoin="round" d="M68 92 C67 88 68 86 69 84 C71 76 74 70 78 64 C82 52 98 40 122 38 C146 36 164 50 163 64 C167 70 170 78 171 86 L171 92 L168 92 C167 88 165 84 162 80 L156 70 L150 74 L144 64 L136 72 L128 62 L120 70 L112 63 L104 72 L96 66 L88 74 L80 80 C75 84 72 88 72 92 Z"/>
+        <path class="c-hair-hi" d="M102 50 C110 42 126 40 144 43 C128 46 114 50 104 58 Z"/>
+        <path class="c-hair-hi" d="M122 50 C132 45 146 46 154 51 C142 53 132 56 127 61 Z"/>
+        <path class="s-hair" d="M90 90 Q101 84 112 89 M128 89 Q139 84 150 90" fill="none" stroke-width="4" stroke-linecap="round"/>
+        <g class="blink">
+          <circle cx="101" cy="108" r="5.5" fill="#1c1917"/>
+          <circle cx="139" cy="108" r="5.5" fill="#1c1917"/>
+          <circle cx="103" cy="106" r="1.8" fill="#fff"/>
+          <circle cx="141" cy="106" r="1.8" fill="#fff"/>
+        </g>
+        <path d="M120 112 Q115 124 122 126" fill="none" stroke="#000" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="88" cy="126" r="8" fill="#f43f5e" opacity=".18"/>
+        <circle cx="152" cy="126" r="8" fill="#f43f5e" opacity=".18"/>
+        <!-- smile -->
+        <path d="M105 132 Q120 152 135 132 Z" fill="#fff" stroke="#3b1d12" stroke-width="3" stroke-linejoin="round"/>
+        <!-- polygonal glasses -->
+        <g fill="none" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+          <path class="s-glasses" fill="#fff" fill-opacity=".14" d="M85 102 L92 95 L111 95 L117 103 L113 117 L91 117 Z"/>
+          <path class="s-glasses" fill="#fff" fill-opacity=".14" d="M155 102 L148 95 L129 95 L123 103 L127 117 L149 117 Z"/>
+          <path class="s-glasses" d="M117 103 Q120 100 123 103 M85 102 L71 99 M155 102 L169 99"/>
+          <path d="M95 100 L102 100 M132 100 L139 100" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="logo" href="#top">
+        <span class="logo__avatar" aria-hidden="true">
+          <svg viewBox="40 22 160 160" width="36" height="36"><use href="#boy-bust" width="240" height="260"/></svg>
+        </span>
+        <span>Ilia<span class="logo__dot" aria-hidden="true">.</span>Sadeghi</span>
+      </a>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+          <svg class="icon icon--moon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav__toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <svg class="icon icon--open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon icon--close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__layout">
+        <div class="hero__inner">
+          <p class="eyebrow">CompE student &middot; York University</p>
+          <h1 id="hero-title">Hi, I&rsquo;m Ilia Sadeghi.<br><span class="accent-text">I build things.</span></h1>
+          <!-- TODO: replace tagline / supporting sentence if you like -->
+          <p class="hero__lead">First-year computer engineering student who builds things. I&rsquo;m 18, curious about how software meets hardware, and heading toward a career as an AI engineer.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- Hero illustration. TODO: replace with your own artwork or photo if you prefer. -->
+        <div class="hero__art">
+          <svg viewBox="0 0 560 520" role="img" aria-labelledby="hero-art-title">
+            <title id="hero-art-title">Illustration of a smiling boy in a hoodie coding on a laptop, surrounded by floating code, neural network and Python badges</title>
+            <circle class="art-blob" cx="280" cy="280" r="205"/>
+            <circle class="art-ring" cx="280" cy="280" r="244" fill="none" stroke-dasharray="3 9" stroke-linecap="round"/>
+
+            <!-- character + laptop -->
+            <use href="#boy-bust" x="150" y="112" width="260" height="282"/>
+            <rect class="art-laptop" x="152" y="352" width="256" height="128" rx="14"/>
+            <circle cx="280" cy="416" r="14" class="art-laptop-logo"/>
+            <rect class="art-laptop-base" x="112" y="478" width="336" height="14" rx="7"/>
+
+            <!-- floating code card -->
+            <g class="float float--a">
+              <rect class="art-card" x="14" y="70" width="168" height="104" rx="16"/>
+              <circle cx="34" cy="90" r="4.5" fill="#f87171"/><circle cx="50" cy="90" r="4.5" fill="#fbbf24"/><circle cx="66" cy="90" r="4.5" fill="#34d399"/>
+              <rect class="art-code-accent" x="30" y="110" width="30" height="8" rx="4"/>
+              <rect class="art-code-line" x="68" y="110" width="76" height="8" rx="4"/>
+              <rect class="art-code-line" x="44" y="130" width="96" height="8" rx="4"/>
+              <rect class="art-code-accent" x="30" y="150" width="54" height="8" rx="4"/>
+            </g>
+
+            <!-- floating neural net card -->
+            <g class="float float--b">
+              <rect class="art-card" x="394" y="48" width="152" height="116" rx="16"/>
+              <g class="art-net-lines" stroke-width="2">
+                <path d="M424 80 L470 74 M424 80 L470 106 M424 112 L470 74 M424 112 L470 106 M424 144 L470 106 M424 144 L470 138 M424 112 L470 138 M470 74 L516 106 M470 106 L516 106 M470 138 L516 106"/>
+              </g>
+              <g class="art-net-nodes">
+                <circle cx="424" cy="80" r="8"/><circle cx="424" cy="112" r="8"/><circle cx="424" cy="144" r="8"/>
+                <circle cx="470" cy="74" r="8"/><circle cx="470" cy="106" r="8"/><circle cx="470" cy="138" r="8"/>
+                <circle cx="516" cy="106" r="10" class="art-net-out"/>
+              </g>
+            </g>
+
+            <!-- floating badges -->
+            <g class="float float--c">
+              <rect class="art-card" x="408" y="236" width="128" height="38" rx="19"/>
+              <circle class="art-dot-green" cx="430" cy="255" r="5"/>
+              <text class="art-text" x="444" y="260">Python</text>
+            </g>
+            <g class="float float--d">
+              <rect class="art-card" x="6" y="262" width="172" height="38" rx="19"/>
+              <circle class="art-dot-accent" cx="30" cy="281" r="5"/>
+              <text class="art-text" x="44" y="286">Year 1 &middot; CompE</text>
+            </g>
+            <g class="float float--b">
+              <circle class="art-chip" cx="70" cy="392" r="30"/>
+              <g stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none">
+                <rect x="58" y="380" width="24" height="24" rx="4"/>
+                <path d="M64 372v8M76 372v8M64 404v8M76 404v8M50 386h8M50 398h8M82 386h8M82 398h8"/>
+              </g>
+            </g>
+            <g class="art-sparkle"><path d="M510 330l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/></g>
+            <g class="art-sparkle art-sparkle--s"><path d="M200 36l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section__sub">A selection of things I&rsquo;ve built and learned from. Click a card for details.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by technology" id="filters"></div>
+        <p class="visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
+
+        <ul class="grid" id="project-grid">
+          <noscript><li class="empty">Projects need JavaScript to display. See the GitHub profile linked below instead.</li></noscript>
+        </ul>
+
+        <div class="empty" id="empty-state" hidden>
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M8.5 11h5"/></svg>
+          <h3>No projects match that filter yet</h3>
+          <p>I&rsquo;m always building something new. Try another tag, or see everything.</p>
+          <button class="btn btn--ghost" type="button" id="clear-filter">Show all projects</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS (data lives in js/reviews.js; hidden automatically if the list is empty) -->
+    <section class="section section--alt" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="reviews__head reveal">
+          <div class="section__head">
+            <h2 id="reviews-title">Reviews</h2>
+            <p class="section__sub">What people I&rsquo;ve worked with say about the projects I delivered.</p>
+          </div>
+          <div class="score" id="reviews-score" hidden></div>
+        </div>
+        <ul class="reviews" id="review-list"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <!-- Portrait. TODO: replace the illustration with your own photo: <img src="assets/images/me.jpg" alt="Ilia Sadeghi" width="400" height="440"> -->
+        <figure class="portrait reveal">
+          <svg viewBox="0 0 400 440" role="img" aria-labelledby="portrait-title">
+            <title id="portrait-title">Illustration of Ilia, a smiling boy in an indigo hoodie</title>
+            <defs>
+              <linearGradient id="portrait-bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" style="stop-color: var(--color-accent)"/>
+                <stop offset="1" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="440" fill="url(#portrait-bg)"/>
+            <circle cx="330" cy="70" r="120" fill="#fff" fill-opacity=".1"/>
+            <circle cx="50" cy="380" r="150" fill="#fff" fill-opacity=".08"/>
+            <g fill="none" stroke="#fff" stroke-opacity=".22">
+              <path d="M0 110h400M0 220h400M0 330h400M100 0v440M200 0v440M300 0v440"/>
+            </g>
+            <use href="#boy-bust" x="48" y="92" width="304" height="330"/>
+            <g class="art-sparkle art-sparkle--white"><path d="M338 150l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/></g>
+            <g class="art-sparkle art-sparkle--white art-sparkle--s"><path d="M62 120l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/></g>
+          </svg>
+          <figcaption class="portrait__badge"><span class="portrait__dot" aria-hidden="true"></span>Open to internships</figcaption>
+        </figure>
+
+        <div class="about__content">
+          <div class="about__text reveal">
+            <h2 id="about-title">About me</h2>
+            <!-- TODO: replace bio -->
+            <p>I&rsquo;m an 18-year-old first-year computer engineering student at York University. I like turning ideas into working projects, from small web apps to sensors and machine-learning experiments.</p>
+            <p>My goal is to work as an AI engineer: building systems that learn, and making them useful, reliable and understandable.</p>
+          </div>
+
+          <!-- TODO: update these facts -->
+          <ul class="stats reveal" aria-label="At a glance">
+            <li class="stat"><span class="stat__num">18</span><span class="stat__label">years old</span></li>
+            <li class="stat"><span class="stat__num">Year&nbsp;1</span><span class="stat__label">York University</span></li>
+            <li class="stat"><span class="stat__num" id="stat-projects">5</span><span class="stat__label">projects shown</span></li>
+          </ul>
+
+          <div class="about__skills reveal">
+            <h3>Skills &amp; tools</h3>
+            <!-- TODO: replace with your real skills -->
+            <ul class="skills" aria-label="Skills and tools">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+                Python
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4c-2 0-3 1-3 3v2c0 1.5-.8 3-2 3 1.2 0 2 1.5 2 3v2c0 2 1 3 3 3M16 4c2 0 3 1 3 3v2c0 1.5.8 3 2 3-1.2 0-2 1.5-2 3v2c0 2-1 3-3 3"/></svg>
+                JavaScript
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>
+                C / C++
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 9v11"/></svg>
+                HTML &amp; CSS
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M7 6l3.5 5M7 18l3.5-5M14 12h3"/></svg>
+                PyTorch
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
+                Arduino
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 7v10M18 11c0 4-6 3-12 6"/></svg>
+                Git &amp; GitHub
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 10l3 2-3 2M12 15h5"/></svg>
+                Linux
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact reveal">
+          <!-- Decorative: the character says hi -->
+          <svg class="contact__art" viewBox="0 0 320 250" aria-hidden="true" focusable="false">
+            <circle class="art-blob" cx="120" cy="140" r="104"/>
+            <use href="#boy-bust" x="30" y="22" width="210" height="228"/>
+            <g class="wave">
+              <path class="art-bubble" d="M212 26h84a14 14 0 0 1 14 14v34a14 14 0 0 1-14 14h-58l-22 18v-18h-4a14 14 0 0 1-14-14V40a14 14 0 0 1 14-14z"/>
+              <text class="art-bubble-text" x="254" y="64" text-anchor="middle">Say hi!</text>
+            </g>
+          </svg>
+          <h2 id="contact-title">Let&rsquo;s build something together</h2>
+          <p>I&rsquo;m open to internships, collaborations and good conversations about AI and engineering. The fastest way to reach me is email.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:iliasadeghi.ca@gmail.com">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              Email me
+            </a>
+            <button class="btn btn--ghost" type="button" id="copy-email" data-email="iliasadeghi.ca@gmail.com">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+              Copy email
+            </button>
+          </div>
+          <p class="contact__address">iliasadeghi.ca@gmail.com</p>
+          <ul class="socials">
+            <li>
+              <a class="social" href="https://github.com/iliasadeghi" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <!-- TODO: replace with your LinkedIn profile URL -->
+              <a class="social" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Ilia Sadeghi. Built with plain HTML, CSS and JavaScript.</p>
+      <a class="footer__top" href="#top">
+        Back to top
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="icon-btn modal__close" type="button" data-close aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__media" id="modal-media"></div>
+      <div class="modal__body">
+        <h3 id="modal-title"></h3>
+        <ul class="tags" id="modal-tags" aria-label="Technologies used"></ul>
+        <div class="modal__text" id="modal-text"></div>
+        <div class="modal__links" id="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
