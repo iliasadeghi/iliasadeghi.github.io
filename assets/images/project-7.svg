@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Placeholder image" shape-rendering="crispEdges">
+  <!-- TODO: replace with a real screenshot or GIF thumbnail -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <!-- pixel clouds -->
+  <g fill="#fff" fill-opacity=".85">
+    <rect x="90" y="80" width="120" height="30"/><rect x="120" y="56" width="60" height="30"/>
+    <rect x="520" y="130" width="150" height="30"/><rect x="560" y="106" width="70" height="30"/>
+  </g>
+  <!-- platforms -->
+  <g>
+    <rect x="0" y="400" width="800" height="100" fill="#16a34a"/>
+    <rect x="0" y="400" width="800" height="14" fill="#4ade80"/>
+    <rect x="0" y="440" width="800" height="60" fill="#854d0e"/>
+    <rect x="200" y="320" width="140" height="24" fill="#a16207"/><rect x="200" y="320" width="140" height="8" fill="#facc15"/>
+    <rect x="460" y="260" width="160" height="24" fill="#a16207"/><rect x="460" y="260" width="160" height="8" fill="#facc15"/>
+  </g>
+  <!-- coins -->
+  <g fill="#fde047" stroke="#ca8a04" stroke-width="4">
+    <rect x="248" y="270" width="22" height="30" rx="8"/>
+    <rect x="510" y="210" width="22" height="30" rx="8"/>
+    <rect x="552" y="210" width="22" height="30" rx="8"/>
+  </g>
+  <!-- player -->
+  <g>
+    <rect x="110" y="340" width="60" height="60" fill="#0f172a"/>
+    <rect x="118" y="348" width="44" height="26" fill="#f0c29b"/>
+    <rect x="118" y="348" width="44" height="9" fill="#2b1d16"/>
+    <rect x="128" y="360" width="8" height="8" fill="#0f172a"/><rect x="146" y="360" width="8" height="8" fill="#0f172a"/>
+    <rect x="110" y="378" width="60" height="22" fill="#4f46e5"/>
+  </g>
+  <!-- enemy -->
+  <g>
+    <rect x="620" y="364" width="48" height="36" fill="#dc2626"/>
+    <rect x="632" y="374" width="10" height="10" fill="#fff"/><rect x="650" y="374" width="10" height="10" fill="#fff"/>
+  </g>
+</svg>
