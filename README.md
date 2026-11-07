@@ -51,7 +51,9 @@ If an image path is wrong, the card shows a coloured placeholder with the projec
 
 Open `js/reviews.js` and edit the `REVIEWS` array (one object per review: `name`, `role`, `company`, `rating` out of 5, `quote`, optional `project`). The average score at the top is calculated automatically, and decimal ratings like `4.5` show as partial stars.
 
-The six entries included are **mock data for a class exercise**: the people, businesses and quotes are fictional, and each card shows a "Mock" badge. Before sharing the site publicly, either empty the array to hide the section or replace them with real reviews and delete the `placeholder: true` line from each. Only publish words the reviewer actually wrote (or approved) and ask their permission first. Good sources: internship or co-op supervisors, professors and TAs, hackathon mentors, club or team leads, freelance clients. If the array is empty, the Reviews section and its nav link disappear.
+The list starts **empty**, so the Reviews section and its nav link are hidden until you add a real review. Only publish words the reviewer actually wrote (or approved) and ask their permission first. Good sources: internship or co-op supervisors, professors and TAs, hackathon mentors, club or team leads, freelance clients.
+
+A set of six fictional **mock reviews** for a class exercise is saved in `mock-data/reviews.mock.js` (not part of the deployed site). To show them locally, copy its contents over `js/reviews.js`. Each mock card displays a "Mock" badge, but don't publish them as if they were real.
 
 ## The character illustration
 
@@ -69,7 +71,7 @@ Search the project for `TODO` to find everything to personalise:
 - Bio, quick facts and skills list: `index.html`, About section (the "projects shown" number updates itself from `js/projects.js`)
 - Canonical URL and social preview image (`og:image`, `twitter:image`): already set for `https://iliasadeghi.github.io/` in the `<head>` of `index.html`; change them if you move to another address. The preview image is `assets/images/og-image.png` (1200x630)
 - The eight sample projects and their images
-- The six mock reviews in `js/reviews.js` (fictional: remove or replace before sharing the site)
+- Real reviews in `js/reviews.js` (the list is empty, so the Reviews section is hidden until you add some)
 
 ## Change colors and fonts
 
