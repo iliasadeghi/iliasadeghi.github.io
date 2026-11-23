@@ -35,12 +35,12 @@ const PROJECTS = [
     // Real project: https://github.com/iliasadeghi/pitchiq
     title: "PitchIQ",
     description:
-      "A landing page for a concept soccer-learning app, with an interactive quiz, topic filter, pricing toggle and FAQ.",
+      "A competitive soccer quiz experience where fans duel head-to-head, with a playable timed duel, leaderboard, ranked divisions and a Weekly Cup.",
     longDescription:
-      "A frontend-only landing page for PitchIQ, a concept app that teaches soccer rules, tactics and history through bite-sized lessons and daily quizzes. The quiz, topic filter, pricing toggle, FAQ accordion, waitlist form and mobile menu all run in the browser, with no backend.\n\nBuilt with React 18, TypeScript (strict mode), Vite, Tailwind CSS and Framer Motion, with original inline SVG artwork, light and dark themes, lazy-loaded sections and accessibility linting. A GitHub Actions workflow lints, builds and deploys it to GitHub Pages on every push.",
+      "Landing page for PitchIQ, a concept app where fans duel each other on players, teams, cups and legendary matches. It includes a playable head-to-head duel against a simulated rival: pick a category, then answer five timed questions, scoring for accuracy and speed, with keyboard controls and a relaxed mode that turns the timer off. Around it sit a live results ticker, a leaderboard with Global, This week and Friends tabs, ranked divisions and badges, and a Weekly Cup with a countdown and bracket.\n\nBuilt with React 18, TypeScript (strict mode), Vite, Tailwind CSS and Framer Motion, with accessibility linting. A GitHub Actions workflow builds and deploys it to GitHub Pages on every push.",
     tags: ["TypeScript", "React", "Tailwind", "Web"],
     image: "assets/images/pitchiq.jpg",
-    imageAlt: "Screenshot of the PitchIQ landing page: \"Know the game inside out.\" beside a phone showing a daily soccer quiz",
+    imageAlt: "Screenshot of the PitchIQ page: \"Prove your ball knowledge.\" beside a live ranked duel scoreboard",
     liveUrl: "https://iliasadeghi.github.io/pitchiq/",
     codeUrl: "https://github.com/iliasadeghi/pitchiq",
     featured: false

@@ -568,7 +568,7 @@
     updateProgress();
   }
 
-  /* ---------- keep the "projects shown" stat in sync with the data ---------- */
+  /* ---------- keep the "live projects" stat in sync with the data ---------- */
 
   var statProjects = $('#stat-projects');
   if (statProjects && projects.length) statProjects.textContent = String(projects.length);

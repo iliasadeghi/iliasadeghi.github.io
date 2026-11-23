@@ -68,9 +68,9 @@ The boy in the nav, hero, About and Contact sections is one inline SVG drawn onc
 Search the project for `TODO` to find everything to personalise:
 
 - LinkedIn URL: `index.html`, Contact section (the GitHub link already points to github.com/iliasadeghi)
-- Bio and quick facts: `index.html`, About section (the "projects shown" number updates itself from `js/projects.js`)
+- Bio and quick facts: `index.html`, About section (the "live projects" number updates itself from `js/projects.js`)
 - Skills: `index.html`, Skills section. Six category cards (Languages, Frontend, Backend, AI & Machine Learning, Hardware & Embedded, Tools & Workflow); edit the `<li>` items in each card's list, or copy a whole `<li class="reveal">` card to add a category
-- Education: `index.html`, Education section. Confirm the degree dates (currently "Sep 2026 – Expected 2030") and the coursework list; copy the `<article class="edu-card">` block to add another school or certificate
+- Education: `index.html`, Education section. The degree card and the "Focus areas" list; copy the `<article class="edu-card">` block to add another school or certificate
 - Canonical URL and social preview image (`og:image`, `twitter:image`): already set for `https://iliasadeghi.github.io/` in the `<head>` of `index.html`; change them if you move to another address. The preview image is `assets/images/og-image.png` (1200x630)
 - Real reviews in `js/reviews.js` (the list is empty, so the Reviews section is hidden until you add some)
 
