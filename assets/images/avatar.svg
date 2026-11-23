@@ -5,9 +5,9 @@
     .c-skin-shade { fill: var(--skin-shade, #e8b999); }
     .c-hair { fill: var(--hair, #1f1714); }
     .c-hair-hi { fill: var(--hair-hi, #3a2a24); }
-    .c-shirt { fill: var(--shirt, #4f46e5); }
-    .c-shirt-dark { fill: var(--shirt-dark, #3730a3); }
-    .s-shirt-dark { stroke: var(--shirt-dark, #3730a3); }
+    .c-shirt { fill: var(--shirt, #1e3a8a); }
+    .c-shirt-dark { fill: var(--shirt-dark, #172554); }
+    .s-shirt-dark { stroke: var(--shirt-dark, #172554); }
     .s-hair { stroke: var(--hair, #1f1714); }
     .s-glasses { stroke: var(--glasses, #262626); }
   </style>

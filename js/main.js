@@ -59,7 +59,7 @@
     // Browser UI colour: override the media-specific tags when the user picks a theme manually.
     if (root.getAttribute('data-theme')) {
       $$('meta[name="theme-color"]').forEach(function (m) {
-        m.setAttribute('content', dark ? '#0c0a09' : '#fafaf9');
+        m.setAttribute('content', dark ? '#0b1120' : '#f8fafc');
         m.removeAttribute('media');
       });
     }
@@ -136,7 +136,7 @@
   doc.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && menuBtn.getAttribute('aria-expanded') === 'true') setMenu(false, true);
   });
-  window.matchMedia('(min-width: 640px)').addEventListener('change', function (e) {
+  window.matchMedia('(min-width: 900px)').addEventListener('change', function (e) {
     if (e.matches) setMenu(false);
   });
 
@@ -170,6 +170,8 @@
       });
       if (img.parentNode) img.parentNode.replaceChild(fallback, img);
     }, { once: true });
+    // Optional focal point when the image is cropped, e.g. "left center" for screenshots.
+    if (typeof project.imagePosition === 'string') img.style.objectPosition = project.imagePosition;
     return img;
   }
 

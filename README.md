@@ -43,7 +43,7 @@ Open `js/projects.js` and add an object to the `PROJECTS` array:
 
 1. Put the image in `assets/images/` (PNG, JPG, WebP or SVG).
 2. Save and refresh. Cards, filter chips and the modal update on their own.
-3. Delete the sample projects (they are marked `TODO: replace`) when you have your own.
+3. To make a different project the big "Featured" card, set its `featured` to `true` and the others to `false`.
 
 If an image path is wrong, the card shows a coloured placeholder with the project's initial instead of a broken image.
 
@@ -68,9 +68,10 @@ The boy in the nav, hero, About and Contact sections is one inline SVG drawn onc
 Search the project for `TODO` to find everything to personalise:
 
 - LinkedIn URL: `index.html`, Contact section (the GitHub link already points to github.com/iliasadeghi)
-- Bio, quick facts and skills list: `index.html`, About section (the "projects shown" number updates itself from `js/projects.js`)
+- Bio and quick facts: `index.html`, About section (the "projects shown" number updates itself from `js/projects.js`)
+- Skills: `index.html`, Skills section. Six category cards (Languages, Frontend, Backend, AI & Machine Learning, Hardware & Embedded, Tools & Workflow); edit the `<li>` items in each card's list, or copy a whole `<li class="reveal">` card to add a category
+- Education: `index.html`, Education section. Confirm the degree dates (currently "Sep 2026 – Expected 2030") and the coursework list; copy the `<article class="edu-card">` block to add another school or certificate
 - Canonical URL and social preview image (`og:image`, `twitter:image`): already set for `https://iliasadeghi.github.io/` in the `<head>` of `index.html`; change them if you move to another address. The preview image is `assets/images/og-image.png` (1200x630)
-- The eight sample projects and their images
 - Real reviews in `js/reviews.js` (the list is empty, so the Reviews section is hidden until you add some)
 
 ## Change colors and fonts
@@ -83,7 +84,7 @@ Search the project for `TODO` to find everything to personalise:
 
 Spacing, radius, type sizes, shadows and animation durations are tokens in the same block.
 
-**Fonts.** The site uses Inter (body) and Space Grotesk (headings).
+**Fonts.** The site uses Inter (body) and Plus Jakarta Sans (headings).
 
 1. Change the `family=` parts of the Google Fonts `<link>` in `index.html` (keep `display=swap`).
 2. Update `--font-body` and `--font-display` in `css/styles.css`.
