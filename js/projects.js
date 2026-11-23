@@ -41,7 +41,7 @@ const PROJECTS = [
     tags: ["TypeScript", "React", "Tailwind", "Web"],
     image: "assets/images/pitchiq.jpg",
     imageAlt: "Screenshot of the PitchIQ page: \"Prove your ball knowledge.\" beside a live ranked duel scoreboard",
-    liveUrl: "https://iliasadeghi.github.io/pitchiq/",
+    liveUrl: "https://pitchiq-eta-drab.vercel.app",
     codeUrl: "https://github.com/iliasadeghi/pitchiq",
     featured: false
   },
